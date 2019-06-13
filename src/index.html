@@ -2,13 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Tus secretos diarios</title>
+    <link href="style.css" link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+    <body class= "fondo">
+      <section id= "bienvenida" class="aparecer">
+          <h1>Tus secretos diarios</h1>
+          <p class="mensaje-inicial">¿Escribes un diario y tienes miedo de que alguien lo lea y descubra su interior?</p>
+          <p class="mensaje-inicial">Tenemos la solución ¡Un código secreto sólo para ti!</p>
+          <button id="comenzar" class="botoni">COMENZAR</button>
+      </section>
+      <section id="preguntar" class="desaparecer">
+          <h1>Tus secretos diarios</h1>
+          <h3>¿Qué quieres hacer?</h3>
+          <button id="cifrar" class="botoni">Ocultar un secreto</button>
+          <button id="descifrar" class="botoni">Mostrar un secreto</button>
+      </section>
+      <section id ="cifrado" class ="desaparecer">
+          <h3>Ingresa la palabra que quieres ocultar (¡sólo mayúsculas!), escoge un número que servirá como clave 
+              y da click en el botón</h3>
+          <p><input type="text" placeholder="Escribe la palabra"> <input type ="number" placeholder="Elige tu clave"> <button id="ocultar" class="botoni">OCULTAR</button>
+          <h4>Secreto cifrado:</h4>
+          <p><button id="regresar" class= "botoni">REGRESAR</button>
+          
+      </section>
+      <section id ="descifrado" class ="desaparecer">
+          <h3>Si quieres descifrar algo, ingresa el mensaje oculto y el número clave que hayas usado</h3>
+          <p><input type="text" placeholder="Escribe el secreto"> <input type ="number" placeholder="Elige tu clave"> <button class="botoni">MOSTRAR</button>
+          <h4>Secreto descifrado:</h4>
+          <p><button id="regresar2" class="botoni">REGRESAR</button>
+      </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

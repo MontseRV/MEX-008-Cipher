@@ -1,3 +1,21 @@
+# Tus secretos diarios
+
+Tus secretos diarios es una página que ayuda a cifrar y descifrar palabras de manera rápida y sencilla. Actividades tales como escribir un diario dejarán de representar una preocupación constante, porque aunque lo encuentren, ya sea de manera física o digital, no podrán descubrir tus mas íntimos pensamientos y sentimientos.
+
+## Acerca del proyecto
+
+Los objetivos del proyecto son poder cifrar y descifrar palabras eligiendo previamente un número que servirá como clave. Este proyecto para tal efecto, usará el Cifrado Cesar que es es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.  
+
+Este proyecto surge de una investigación realizada a un grupo de 6 mujeres. Las edades varían entre los 24 y los 45 años. Se les hizo un sencilla pregunta, respecto a la utilidad que podrían encontrarle a una página o aplicación que les cifrara alguna palabra o mensaje. Hubieron diversas opiniones e ideas, sin embargo, una de las necesidades que pude identificar fue la de encriptar cosas en un diario.
+
+Con eso en mente desarrollé un prototipo, con la aplicación Marvel, que puse a prueba en varias ocasiones, con diferentes personas, ya no sólo con este primer grupo. A partir del feedback recibido realicé las modificaciones necesarias.
+El diseño final consta de 4 secciones: una bienvenida. la pregunta inicial, sección de cifrado y sección de descifrado. 
+
+
+
+
+
+
 # Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.

@@ -36,26 +36,28 @@ boton2.addEventListener("click", mostrarDescif)
 botonReg.addEventListener("click", regrePre)
 botonReg2.addEventListener("click", regrePre)
 
-//Esto ya es de la sección del cifrado
+//Esto ya es de la sección del cifrado y descifrado
 
-const palabraCif =document.getElementById ("palabra").value
-const offset = document.getElementById("offset").value
-const botMostrar =document.getElementById("ocultar")
-const print = document.getElementById("palaCif")
-let ascii ="";
-let nuevaAscii="";
-let nuevaLetra ="";
-let nuevaPalabra ="";
+const botOcultar =document.getElementById("ocultar")
+const botMostrar =document.getElementById("mostrar")
+const secOcult =document.getElementById("palaCif")
+const secDesc =document.getElementById("palaDescif")
+
 
 const cifrado = () =>{
-    for (let i= 0; i< palabraCif.length; i++){
-        ascii = palabraCif.charCodeAt(i);
-        nuevaAscii = (ascii-65 + offset)%26+65;
-        nuevaLetra = String.fromCharCode(nuevaAscii);
-        nuevaPalabra = nuevaPalabra + nuevaLetra;
-      }
-    print.innerHTML= nuevaPalabra
-    return nuevaPalabra
+    let palabra = document.getElementById ("palabra").value;
+    let offset = parseInt(document.getElementById("offset").value);
+    let nuevaPalabra = cipher.encode (offset, palabra);
+    secOcult.innerHTML= nuevaPalabra
 }
 
-botMostrar.addEventListener("click", cifrado)
+const descifrado = () =>{
+    let palabra = document.getElementById ("palabra").value;
+    let offset = parseInt(document.getElementById("offset").value);
+    let nuevaPalabra = cipher.decode (offset, palabra);
+    secDesc.innerHTML= nuevaPalabra
+}
+
+
+botOcultar.addEventListener("click", cifrado)
+botMostrar.addEventListener("click", descifrado)

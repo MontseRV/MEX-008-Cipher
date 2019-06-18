@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tus secretos diarios</title>
-    <link href="style.css" link rel="stylesheet" href="style.css" />
+    <link href="style.css" link rel="stylesheet"/>
   </head>
     <body class= "fondo">
       <section id= "bienvenida" class="aparecer">
@@ -21,16 +21,16 @@
       <section id ="cifrado" class ="desaparecer">
           <h3>Ingresa la palabra que quieres ocultar (¡sólo mayúsculas!), escoge un número que servirá como clave 
               y da click en el botón</h3>
-          <p><input type="text" placeholder="Escribe la palabra"> <input type ="number" placeholder="Elige tu clave"> <button id="ocultar" class="botoni">OCULTAR</button>
-          <h4>Secreto cifrado:</h4>
-          <p><button id="regresar" class= "botoni">REGRESAR</button>
-          
+          <p><input type="text" id=  "palabra" placeholder="Escribe la palabra"> <input type ="number" id ="offset" placeholder="Elige tu clave"> <button id="ocultar" class="botoni">OCULTAR</button></p>
+          <p>Secreto cifrado:</p>
+          <p id="palaCif"></p>
+          <p><button id="regresar" class= "botoni">REGRESAR</button></p>
       </section>
       <section id ="descifrado" class ="desaparecer">
           <h3>Si quieres descifrar algo, ingresa el mensaje oculto y el número clave que hayas usado</h3>
-          <p><input type="text" placeholder="Escribe el secreto"> <input type ="number" placeholder="Elige tu clave"> <button class="botoni">MOSTRAR</button>
+          <p><input type="text" placeholder="Escribe el secreto"> <input type ="number" placeholder="Elige tu clave"> <button class="botoni">MOSTRAR</button></p>
           <h4>Secreto descifrado:</h4>
-          <p><button id="regresar2" class="botoni">REGRESAR</button>
+          <p><button id="regresar2" class="botoni">REGRESAR</button></p>
       </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

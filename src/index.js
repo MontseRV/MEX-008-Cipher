@@ -47,15 +47,15 @@ const secDesc =document.getElementById("palaDescif")
 const cifrado = () =>{
     let palabra = document.getElementById ("palabra").value;
     let offset = parseInt(document.getElementById("offset").value);
-    let nuevaPalabra = cipher.encode (offset, palabra);
-    secOcult.innerHTML=nuevaPalabra;
+    let nuevaPalabra = cipher.encode(offset, palabra);
+    secOcult.innerHTML= nuevaPalabra;
 }
 
 const descifrado = () =>{
     let palabra = document.getElementById ("palabra2").value;
     let offset = parseInt(document.getElementById("offset2").value);
-    let nuevaPalabra = cipher.decode (offset, palabra);
-    secDesc.innerHTML=nuevaPalabra;
+    let nuevaPalabra = cipher.decode(offset, palabra);
+    secDesc.innerHTML= nuevaPalabra;
 }
 
 

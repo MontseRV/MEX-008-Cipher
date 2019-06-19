@@ -10,31 +10,31 @@ const botonReg2 =document.getElementById ("regresar2")
 
 
 const mostrarPreg= () => {
-    seccionPreg.classList.remove("desaparecer")
-    seccionBienve.classList.add("desaparecer")
+    seccionPreg.classList.remove("desaparecer");
+    seccionBienve.classList.add("desaparecer");
 }
 
 const mostrarCif = () => {
-    seccionCifrado.classList.remove("desaparecer")
-    seccionPreg.classList.add("desaparecer")
+    seccionCifrado.classList.remove("desaparecer");
+    seccionPreg.classList.add("desaparecer");
 }
 
 const mostrarDescif =() =>{
-    seccionDescifrado.classList.remove("desaparecer")
-    seccionPreg.classList.add("desaparecer")
+    seccionDescifrado.classList.remove("desaparecer");
+    seccionPreg.classList.add("desaparecer");
 }
 
 const regrePre =() => {
-    seccionPreg.classList.remove("desaparecer")
-    seccionCifrado.classList.add("desaparecer")
-    seccionDescifrado.classList.add("desaparecer")
+    seccionPreg.classList.remove("desaparecer");
+    seccionCifrado.classList.add("desaparecer");
+    seccionDescifrado.classList.add("desaparecer");
 }
 
-botonComenzar.addEventListener("click", mostrarPreg)
-boton1.addEventListener("click", mostrarCif)
-boton2.addEventListener("click", mostrarDescif)
-botonReg.addEventListener("click", regrePre)
-botonReg2.addEventListener("click", regrePre)
+botonComenzar.addEventListener("click", mostrarPreg);
+boton1.addEventListener("click", mostrarCif);
+boton2.addEventListener("click", mostrarDescif);
+botonReg.addEventListener("click", regrePre);
+botonReg2.addEventListener("click", regrePre);
 
 //Esto ya es de la sección del cifrado y descifrado
 
@@ -48,16 +48,16 @@ const cifrado = () =>{
     let palabra = document.getElementById ("palabra").value;
     let offset = parseInt(document.getElementById("offset").value);
     let nuevaPalabra = cipher.encode (offset, palabra);
-    secOcult.innerHTML= nuevaPalabra
+    secOcult.innerHTML=nuevaPalabra;
 }
 
 const descifrado = () =>{
-    let palabra = document.getElementById ("palabra").value;
-    let offset = parseInt(document.getElementById("offset").value);
+    let palabra = document.getElementById ("palabra2").value;
+    let offset = parseInt(document.getElementById("offset2").value);
     let nuevaPalabra = cipher.decode (offset, palabra);
-    secDesc.innerHTML= nuevaPalabra
+    secDesc.innerHTML=nuevaPalabra;
 }
 
 
-botOcultar.addEventListener("click", cifrado)
-botMostrar.addEventListener("click", descifrado)
+botOcultar.addEventListener("click", cifrado);
+botMostrar.addEventListener("click", descifrado);

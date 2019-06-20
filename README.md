@@ -6,10 +6,13 @@ Tus secretos diarios es una página que ayuda a cifrar y descifrar palabras de m
 
 Los objetivos del proyecto son poder cifrar y descifrar palabras eligiendo previamente un número que servirá como clave. Este proyecto para tal efecto, usará el Cifrado Cesar que es es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.  
 
-Este proyecto surge de una investigación realizada a un grupo de 6 mujeres. Las edades varían entre los 24 y los 45 años. Se les hizo un sencilla pregunta, respecto a la utilidad que podrían encontrarle a una página o aplicación que les cifrara alguna palabra o mensaje. Hubieron diversas opiniones e ideas, sin embargo, una de las necesidades que pude identificar fue la de encriptar cosas en un diario.
+Este proyecto surge de una investigación realizada a un grupo de 6 mujeres. Las edades varían entre los 24 y los 45 años. Se les hizo un sencilla pregunta, respecto a la utilidad que podrían encontrarle a una página o aplicación que les cifrara alguna palabra o mensaje. Hubieron diversas opiniones e ideas, sin embargo, una de las necesidades que se identificó fue la de encriptar cosas en un diario. 
+Está dirigido principalmente a usuarios jóvenes principalmente,aunque no se limita a ellos, que tengan la práctica de escribir un diario ya sea de manera física o digital, y que quieran conservar o aumentar la privacidad de dicho documento. La página cumple con esta necesidad ya que puede codificar cualquier palabra con cualquier offset, así mismo ofrece la posibilidad de mostrar palabras ya cifradas.
 
-Con eso en mente desarrollé un prototipo, con la aplicación Marvel, que puse a prueba en varias ocasiones, con diferentes personas, ya no sólo con este primer grupo. A partir del feedback recibido realicé las modificaciones necesarias.
-El diseño final consta de 4 secciones: una bienvenida. la pregunta inicial, sección de cifrado y sección de descifrado. 
+Con eso en mente se desarrolló un prototipo, con la aplicación Marvel, que puse a prueba en varias ocasiones, con diferentes personas, ya no sólo con este primer grupo. A partir del feedback recibido realicé las modificaciones necesarias.
+El diseño final consta de 4 secciones: una bienvenida y un botón que dirige la siguiente sección. Después aparece la pregunta inicial donde se le ofrecen al usuario las dos opciones, si se quiere "Ocultar un secreto"(cifrar),o por el contrario "Mostrar un secreto"(descifrar). Posteriormente dependiendo de la elección del usuario se muestra la sección de cifrado y sección de descifrado, con sus respectivas indicaciones.
+
+El cifrado y descifrado sólo funciona con palabras escritas en mayúsculas exclusivamente, por lo que esto se especifica en las instrucciones para que no haya problemas con el uso de otro tipo de caracteres. 
 
 
 
